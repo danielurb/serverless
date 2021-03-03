@@ -1,11 +1,13 @@
 const getRandomDadJoke = async () => {
 	// return "Do you want a brief explanation of what an acorn is? In a nutshell, it's an oak tree.";
-	const url = 'https://icanhazdadjoke.com/';
-	const jokeStream = await fetch(url, {
-		headers: {
-			Accept: 'application/json'
-		}
-	});
+	// const url = 'https://icanhazdadjoke.com/';
+	// const jokeStream = await fetch(url, {
+	// 	headers: {
+	// 		Accept: 'application/json'
+	// 	}
+	// });
+	const url = '/.netlify/functions/jokes';
+	const jokeStream = await fetch(url);
 	const jsonJoke = await jokeStream.json();
 	const joke = jsonJoke.joke;
 	return joke;

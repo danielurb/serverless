@@ -1,0 +1,23 @@
+{
+	"name": "serverless",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "netlify dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/danielurb/serverless.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/danielurb/serverless/issues"
+	},
+	"homepage": "https://github.com/danielurb/serverless#readme",
+	"dependencies": {
+		"node-fetch": "^2.6.1"
+	}
+}
